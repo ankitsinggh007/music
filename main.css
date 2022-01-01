@@ -1,0 +1,360 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #09090b;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+}
+.navbar {
+  min-height: 30px;
+  background-color: #0a0a0c;
+  z-index: 2;
+  height: 45px;
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  position: fixed;
+}
+.navbar .list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 15px;
+  color: aliceblue;
+  font-family: sans-serif;
+}
+.Search input {
+  width: 30vw;
+  padding-left: 10px;
+  height: 70%;
+  font-family: sans-serif;
+  background-color: #dcdcdc;
+  border-radius: 10px;
+  /* border: 1px solid #dcdcdc; */
+}
+header .fas {
+  position: relative;
+  right: 25px;
+  /* margin-left: 5px; */
+  padding-top: 2px;
+  height: 50%;
+  width: 5%;
+  /* border-top-right-radius: 10px; */
+  /* background-color: gainsboro; */
+}
+
+.login {
+  width: 7vw;
+}
+.uploading {
+  border: 1px solid black;
+  background-image: linear-gradient(rgba(252, 93, 49, 0.8), lightgrey),
+    url("headphon.png");
+  background-position: center;
+  /* opacity: 0.5; */
+  display: flex;
+  height: 50vh;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 75px;
+  left: 24.4vw;
+}
+.uploading input {
+  height: 20px;
+  width: 50%;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: #dcdcdc;
+  margin-bottom: 3px;
+}
+.uploading a {
+  align-self: flex-end;
+  margin-top: -85px;
+  margin-right: 6px;
+  height: 5px;
+  margin-bottom: 70px;
+}
+main {
+  /* border: 1px solid cyan; */
+  margin-top: 8vh;
+  width: 67vw;
+  height: auto;
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 3vw;
+  justify-content: space-between;
+}
+main .your_playlist {
+  height: 60vh;
+  background-color: #121212;
+  /* border: 1px solid black; */
+  width: 100%;
+  display: flex;
+  /* flex-direction: crow; */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+main .your_playlist .item {
+  /* border: 1px solid green; */
+  background-color: #2b2b2e;
+  border-radius: 7px;
+  height: 22%;
+  width: 28%;
+  z-index: 2;
+  display: flex;
+}
+main .your_playlist .pic {
+  width: 30%;
+  height: 100%;
+}
+main .your_playlist .caption {
+  margin-left: 5px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  align-self: center;
+}
+main .chart1 {
+  height: 55vh;
+  background-color: #121212;
+}
+main .chart1 .cards {
+  width: 100%;
+  position: relative;
+  height: auto;
+}
+main .chart1 .cards .caption {
+  font-weight: bolder;
+  /* margin-right: 11vh; */
+  font-size: larger;
+  margin-left: 10px;
+}
+main .chart1 .cards .left {
+  font-size: xx-small;
+  word-spacing: 1px;
+  position: absolute;
+  left: 136vh;
+  /* top: 5px; */
+  font-weight: bold;
+  color: grey;
+}
+main .chart1 .chart {
+  height: 91%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+}
+main .chart1 .chart .card {
+  height: 90%;
+  width: 23%;
+  align-self: center;
+  /* border: 1px solid black; */
+  background-color: #161616;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+main .chart1 .chart .card .img {
+  height: 70%;
+  width: 80%;
+}
+.chart1 .cards .caption {
+  color: aliceblue;
+}
+main .chart1 .chart .card .caption {
+  font-weight: bold;
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  align-self: flex-start;
+  margin-left: 19px;
+  margin-top: 7px;
+}
+main .chart1 .card .source {
+  font-weight: 500;
+  color: gray;
+  align-self: flex-start;
+  margin-top: 7px;
+  margin-left: 19px;
+}
+main .chart1 .card .logo {
+  position: relative;
+  bottom: 33vh;
+}
+aside {
+  margin-top: 8vh;
+  display: inline-block;
+  height: 100vh;
+  width: 23vw;
+  background-color: #f2f2f2;
+  margin-left: 4vw;
+  /* border: 1px solid black; */
+}
+aside ul li {
+  display: inline-flex;
+}
+aside .span1 {
+  margin-left: 5px;
+  color: #999999;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+aside hr {
+  margin-top: 5px;
+  /* height: 5px; */
+}
+aside .card {
+  height: 11%;
+  width: 23vw;
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  margin-top: 5px;
+}
+aside .card .imgicon {
+  height: 51px;
+  width: 53px;
+  background-size: contain;
+  border-radius: 60%;
+  margin-left: 20px;
+  margin-top: 6px;
+}
+aside .card .imgicon1 {
+  background-image: url("coldwater.jpg");
+}
+aside .card .imgicon2 {
+  background-image: url("justin.jpg");
+}
+aside .card .imgicon3 {
+  background-image: url("britney.jpg");
+}
+aside .card .caption {
+  margin-left: 10px;
+  align-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  word-spacing: 1vh;
+}
+aside .followicon {
+  height: 22px;
+  width: 75px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 55px;
+  font-size: 13px;
+  position: absolute;
+  left: 55%;
+  top: 15px;
+  /* border: 1px solid black; */
+  text-justify: distribute;
+  align-self: center;
+}
+aside .followicon .fas {
+  margin: 3px;
+  color: black;
+}
+aside .followicon span {
+  color: black;
+  margin-top: 2px;
+  margin-left: 3px;
+}
+aside .musicicon {
+  color: #999999;
+}
+aside #secondbox {
+  margin-top: 40px;
+}
+aside #secondbox .mus li {
+  margin-left: -3px;
+  font-size: 10px;
+}
+aside .playstore .btn {
+  margin-top: 10px;
+  height: 8vh;
+  width: 10vw;
+  border-radius: 15px;
+  background-color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+aside .playstore h4 {
+  margin-top: 40px;
+}
+aside .playstore .btn1 {
+  background-image: url("play.png");
+}
+aside .playstore .btn2 {
+  background-image: url("app.png");
+}
+footer {
+  background-color: #f2f2f2;
+}
+footer ul {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.slider {
+  height: 400px;
+  width: 70vw;
+  margin: 10px 0px;
+  overflow: hidden;
+}
+.slider figure {
+  position: relative;
+  width: 500%;
+  height: auto;
+  margin: 0px;
+  animation: 20s ankit infinite;
+}
+img {
+  height: 400px;
+  float: left;
+  width: 20%;
+}
+
+@keyframes ankit {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+.item:hover {
+  box-shadow: 7px 7px 5px grey;
+  transition-duration: 0.2s;
+}
+.card:hover {
+  box-shadow: 3px 3px 5px grey;
+}
