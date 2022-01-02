@@ -2,6 +2,78 @@
   padding: 0;
   margin: 0;
 }
+#lightbox {
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  overflow: hidden;
+  height: 0;
+  width: 0;
+  /* transition: 1s ease-in-out; */
+}
+#lightbox:target {
+  height: 12vh;
+  display: hidden;
+  display: flex;
+  width: 98vw;
+  left: 1px;
+  z-index: 100;
+  justify-content: space-evenly;
+  background-color: #181818;
+  bottom: 0px;
+}
+.player img {
+  height: 85%;
+  width: 85%;
+  justify-self: center;
+  margin: 5px 0px;
+}
+.player .item2 {
+  color: aliceblue;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+.player .controls {
+  width: 40%;
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+.player .controls ul {
+  margin-left: 25%;
+  margin-bottom: 10px;
+}
+.player .controls li {
+  display: inline-block;
+  color: aliceblue;
+  font-size: 1.2rem;
+  margin-left: 30px;
+}
+.player .controls hr {
+  height: 2px;
+  border-radius: 5px;
+  position: relative;
+}
+.player .item5 {
+  align-self: center;
+}
+.player hr::after {
+  content: "";
+  width: 30%;
+  background-color: aliceblue;
+  position: absolute;
+  height: inherit;
+  opacity: 0.4;
+}
+.player hr:hover {
+  box-shadow: 1px 1px 1px grey;
+  content: "";
+  border-radius: 50%;
+}
+.player .item4 {
+  color: aliceblue;
+  margin-top: 32px;
+}
+
 body {
   background-color: #09090b;
   flex-direction: row;
@@ -33,17 +105,13 @@ body {
   font-family: sans-serif;
   background-color: #dcdcdc;
   border-radius: 10px;
-  /* border: 1px solid #dcdcdc; */
 }
 header .fas {
   position: relative;
   right: 25px;
-  /* margin-left: 5px; */
   padding-top: 2px;
   height: 50%;
   width: 5%;
-  /* border-top-right-radius: 10px; */
-  /* background-color: gainsboro; */
 }
 
 .login {
@@ -54,7 +122,6 @@ header .fas {
   background-image: linear-gradient(rgba(252, 93, 49, 0.8), lightgrey),
     url("headphon.png");
   background-position: center;
-  /* opacity: 0.5; */
   display: flex;
   height: 50vh;
   width: 50vw;
@@ -107,7 +174,8 @@ main .your_playlist .item {
   border-radius: 7px;
   height: 22%;
   width: 28%;
-  z-index: 2;
+  /* z-index: 2; */
+  position: relative;
   display: flex;
 }
 main .your_playlist .pic {
@@ -124,7 +192,7 @@ main .chart1 {
   height: 55vh;
   background-color: #121212;
 }
-main .chart1 .cards {
+main .chart1 .card {
   width: 100%;
   position: relative;
   height: auto;
@@ -223,6 +291,7 @@ aside .card {
 aside .card .imgicon {
   height: 51px;
   width: 53px;
+  position: relative;
   background-size: contain;
   border-radius: 60%;
   margin-left: 20px;
@@ -351,10 +420,54 @@ img {
     left: -400%;
   }
 }
-.item:hover {
-  box-shadow: 7px 7px 5px grey;
+.hexon:hover {
+  box-shadow: 5px 5px 5px grey;
+  transform: scale(1.01) translate(5px, -5px);
   transition-duration: 0.2s;
 }
 .card:hover {
   box-shadow: 3px 3px 5px grey;
+}
+.hexon:hover::after {
+  content: "";
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  bottom: 7%;
+  left: 87%;
+  border-radius: 50%;
+  background-image: url(play2icon.jpg);
+  background-size: cover;
+}
+.effect:hover {
+  box-shadow: 5px 5px 5px grey;
+  transform: scale(1.01) translate(5px, -5px);
+  transition-duration: 0.2s;
+}
+.effect:hover::after {
+  content: "";
+  height: 30px;
+  width: 30px;
+  /* display: block; */
+  position: absolute;
+  bottom: 25%;
+  right: 11%;
+  /* z-index: 100px; */
+  /* left: 87%; */
+  border-radius: 50%;
+  background-image: url(play2icon.jpg);
+  background-size: cover;
+}
+aside .card .imgicon:hover::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  background-image: url("play2icon.jpg");
+  background-size: cover;
+}
+a {
+  /* text-decoration: none; */
+  /* color: aliceblue; */
 }

@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200&display=swap");
+* {
+  margin: 0;
+
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+aside {
+  display: inline-block;
+  position: absolute;
+  height: auto;
+  width: 25vw;
+  border: 1px solid black;
+  position: relative;
+  background-color: #000000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+aside ul li {
+  display: inline-block;
+}
+aside ul img {
+  height: 45px;
+  display: inline-block;
+}
+aside ul .span {
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: aliceblue;
+}
+aside .last .second {
+  color: aliceblue;
+  /* display: inline-block; */
+}
+aside .last ul li {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  /* margin-right: 10px; */
+}
+aside .last ul .fas {
+  margin-right: 15px;
+  font-size: 1.4rem;
+}
+
+main {
+  display: inline-block;
+  width: 80%;
+  border: 1px solid greenyellow;
+}
+.first {
+  height: 60vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  /* left: 20%; */
+  background-color: #284128;
+  display: flex;
+  align-items: flex-end;
+}
+.first .img {
+  height: 70%;
+  width: 25%;
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
+  overflow: hidden;
+}
+.first img {
+  width: 100%;
+  height: 100%;
+}
+.first .extraas ul {
+  position: absolute;
+  left: 28%;
+  bottom: 1%;
+  color: #ffffff;
+}
+.first .extraas ul li {
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+.first .extraas .bold {
+  font-size: 4rem;
+  word-spacing: -4px;
+  font-weight: bolder;
+}
+.first .extraas span {
+  white-space: 5px;
+  color: lightgray;
+}
+.second {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(#141c14, #121212 70%);
+}
+.second .iconfirst ul li {
+  display: inline-block;
+}
+.second .iconfirst img {
+  height: 6rem;
+  margin: 5px;
+  background-color: lightgray;
+  border-radius: 50%;
+}
+.second .iconfirst .fas {
+  font-size: 3rem;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  color: lightgray;
+}
+.second .iconsecond ul li {
+  display: inline-block;
+  margin-left: 5%;
+  color: lightgray;
+  font-size: 0.9rem;
+}
+.second .third .item1 {
+  /* margin: 12px; */
+}
+.second .iconsecond .title {
+  margin-right: 25%;
+}
+.second .iconsecond .album {
+  margin-right: 12%;
+}
+.second .iconsecond .hi {
+  margin-left: 14%;
+}
+.second .iconsecond hr {
+  border: 0.1px solid grey;
+  width: 93%;
+  margin: 5px auto;
+}
+
+.second .third .card {
+  height: 8vh;
+  width: 93%;
+  color: aliceblue;
+  margin: 5px auto;
+  display: flex;
+}
+.second .third .card .item2 {
+  height: 90%;
+  margin: auto 20px;
+  width: 5%;
+  overflow: hidden;
+}
+.second .third .card .item2 .img {
+  height: 100%;
+  width: 100%;
+}
+.second .third .card .caption {
+  height: inherit;
+  width: 35%;
+}
+.second .third .card .Album {
+  height: inherit;
+  width: 24%;
+}
+.second .third .card .Date {
+  height: inherit;
+  width: 20%;
+}
+.second .third .card .Duration {
+  align-self: center;
+  margin: 1px auto;
+}
+ul {
+  list-style: none;
+}
+.card:hover {
+  box-shadow: 1px 1px 2px black;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
